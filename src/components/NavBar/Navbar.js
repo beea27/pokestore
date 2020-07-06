@@ -1,19 +1,15 @@
 import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './style.css';
-import '../../App.css';
 
 function Navbar(){
  return(
-  <nav className="navbar Navbar">
-    <img src="img/pokemon.png" alt=""/>
-    <form className="form-inline">
-      <input className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
-      <div className="btn">
-        <button type="button">Search</button>
-      </div>
-      <img src="https://img.icons8.com/plasticine/100/000000/pokeball.png"/>    
-    </form>
-  </nav>
+  <>
+    <nav className="navbar Navbar">
+      <img src="../../img/pokemon.png" alt=""/>
+      <img className="imageBuy" src="https://img.icons8.com/plasticine/100/000000/pokeball.png"/>    
+    </nav>
+  </>
  )
 }
 

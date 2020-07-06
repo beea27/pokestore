@@ -4,7 +4,7 @@ import { getAllPokemon, getPokemon } from './services/pokemon';
 import Card from './components/Card';
 import Navbar from './components/NavBar';
 import './App.css';
-
+import Search from '../src/components/Search';
 
 function App(props) {
   const [pokemonData, setPokemonData] = useState([]);
@@ -12,6 +12,7 @@ function App(props) {
   const [prevUrl, setPrevUrl] = useState('');
   const [loading, setLoading] = useState(true);
   const url = 'https://pokeapi.co/api/v2/pokemon';
+  //const url2 = 'https://pokeres.bastionbot.org/images/pokemon/${id}';
 
   useEffect(() => {
     async function fetchData(){
@@ -62,7 +63,8 @@ function App(props) {
         </div> 
       : (
         <>
-          <Navbar></Navbar>
+          <Navbar/>
+          <Search/>
           <div className="grid-container">
             {
               pokemonData.map((pokemon, i) => {

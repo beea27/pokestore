@@ -1,6 +1,6 @@
 import React from 'react';
 import './style.css';
-import typeColors from '../../helpers/typeColors'
+import typeColors from '../../helpers/typeColors';
 
 function Card({ pokemon }) {
     return (
