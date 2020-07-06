@@ -55,11 +55,11 @@ function App(props) {
   }
 
   return (
-    <div class="page">
+    <div className="page">
       { loading 
       ? 
-        <div class="spinner-border loading" role="status">
-          <span class="sr-only">Loading...</span>
+        <div className="spinner-border loading" role="status">
+          <span className="sr-only">Loading...</span>
         </div> 
       : (
         <>
@@ -76,12 +76,12 @@ function App(props) {
             <button onClick={next}>Next</button>
           </div>
           <footer>
-            <div class="social-media">
+            <div className="social-media">
               <a href="https://github.com/beea27" target="_blank">
-                <img src="https://img.icons8.com/nolan/64/github.png"/>              
+                <img src="https://img.icons8.com/nolan/64/github.png" alt=""/>              
               </a>
               <a href="https://www.linkedin.com/in/beatriz-ali-508940153/" target="_blank">
-                <img src="https://img.icons8.com/nolan/64/linkedin-circled.png"/>              
+                <img src="https://img.icons8.com/nolan/64/linkedin-circled.png" alt=""/>           
               </a>
             </div>
           </footer>
