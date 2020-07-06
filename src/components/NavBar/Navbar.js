@@ -4,12 +4,10 @@ import './style.css';
 
 function Navbar(){
  return(
-  <>
     <nav className="navbar Navbar">
       <img src="../../img/pokemon.png" alt=""/>
-      <img className="imageBuy" src="https://img.icons8.com/plasticine/100/000000/pokeball.png"/>    
+      <img className="imageBuy" src="https://img.icons8.com/plasticine/100/000000/pokeball.png" alt=""/>  
     </nav>
-  </>
  )
 }
 

@@ -6,7 +6,7 @@ function Search(){
     <div class="wrap">
       <div class="search">
           <input type="text" class="searchTerm" placeholder="Search pokemon"/>
-          <button type="submit" class="searchButton">Search</button>
+          <button type="submit" class="searchButton"><span class="material-icons">search</span></button>
       </div>
     </div>
   )

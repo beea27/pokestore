@@ -38,10 +38,10 @@ function Card({ pokemon }) {
             </div>
             <div className="buy">
               <div className="Card__data price">
-                <p className="title">${parseInt(Math.random()*1000)}.00</p>
+                <p className="title">${parseInt(Math.random()*100)}.00</p>
               </div>
               <div className="btn">
-                <button>Buy</button>
+                <button>Add</button>
               </div>
             </div>
         </div>
