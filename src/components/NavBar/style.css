@@ -6,8 +6,9 @@
 
 .imageBuy{
   width: 7%;
+  cursor: pointer;
 }
 
 .imagePokestore{
-  width: 15%;
+  width: 15%; 
 }
