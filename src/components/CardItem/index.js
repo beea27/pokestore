@@ -13,7 +13,11 @@ import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
  
 function CardItem({pokemon}) {
-    const [open, setOpen] = React.useState(false);
+  function refreshPage() {
+    window.location.reload(false);
+  }
+  
+  const [open, setOpen] = React.useState(false);
  
   const handleClickOpen = () => {
     setOpen(true);
@@ -67,7 +71,7 @@ function CardItem({pokemon}) {
                       </DialogContentText>
                   </DialogContent>
                   <DialogActions>
-                      <Button onClick={handleClose} color="primary" autoFocus>
+                      <Button onClick={refreshPage} color="primary" autoFocus>
                           ok
                       </Button>
                   </DialogActions>
