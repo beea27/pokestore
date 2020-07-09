@@ -10,7 +10,7 @@ function Navbar(){
    }
 
  return(
-    <nav className="navbar Navbar">
+    <nav className="navbar">
       <img className="imagePokestore"src={pokemon} alt="Pokemon" /> 
       <img 
       className="imageBuy" 

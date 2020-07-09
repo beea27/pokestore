@@ -13,6 +13,8 @@ import { getAllPokemon, getPokemon } from "./services/pokemon";
 
 import "./App.css";
 
+import close from "./img/close.png";
+
 function App(props) {
   const [pokemonData, setPokemonData] = useState([]);
   const [nextUrl, setNextUrl] = useState("");
@@ -115,7 +117,9 @@ function App(props) {
           <Navbar />
 
           <aside className="menu-lateral">
-              <button onClick={closeMenu}>Close</button>
+              <button className="btnClose" onClick={closeMenu}>
+                <img className="close"src={close} alt="" />
+              </button>
 
               <div>
                 <CardItem pokemon={pokeCart}/>
@@ -146,6 +150,7 @@ function App(props) {
               return <Card key={i} pokemon={pokemon} price={ (i + 1) * 10}/>;
             })}
           </div>
+          
           <div className="btn">
             <button onClick={prev}>Prev</button>
             <button onClick={next}>Next</button>

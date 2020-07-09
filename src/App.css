@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body{
+  position: relative;
+}
+
 .page{
   background-color: white;
 }
@@ -90,7 +94,7 @@ footer{
 .wrap{
   display: flex;
   justify-content: center;
-  margin: 20px;
+  margin: 170px 20px 20px 20px;
 }
 
 
@@ -107,19 +111,26 @@ footer{
 }
 
 .menu-lateral {
-  position: absolute;
+  position: fixed;
   right: 0;
-
-  width: 300px;
+  top:0;
+  width: 400px;
   height: 100vh;
-  z-index: 2;
-  background: rgba(0,0,0,0.7);
+  z-index: 999;
+  background: rgba(192, 86, 192, 0.945);
   overflow: scroll;
-
   visibility: hidden; 
   opacity: 0;
 }
 
 .menu-lateral.active {
   animation: fade forwards 0.5s;
+}
+
+.btnClose{
+  position: absolute;
+  right: 0;
+  background: transparent;
+  border: none;
+  padding: 20px;
 }

@@ -1,14 +1,19 @@
-.Navbar{
+.navbar{
   padding: 20px;
   background-color: purple;
   color: white;
+  position: fixed;
+  top:0;
+  right: 0;
+  width:100%;
+  z-index: 2;
 }
 
 .imageBuy{
-  width: 7%;
+  width: 5%;
   cursor: pointer;
 }
 
 .imagePokestore{
-  width: 15%; 
+  width: 12%; 
 }

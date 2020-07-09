@@ -1,0 +1,48 @@
+.cardItem{
+  background-color: white;
+  margin: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.imgInformations{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.information{
+  text-align: center;
+}
+
+.ImgCard{
+  width:50%;
+}
+
+.poke{
+  font-weight: bold;
+}
+
+.price{
+  font-weight: bold;
+  color: purple;
+}
+
+li{
+  list-style: none;
+}
+
+ul{
+  margin-top: 70px;
+}
+
+.amount{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.button{
+  background-color: transparent;
+  border: none;
+}
